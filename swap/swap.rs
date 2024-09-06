@@ -28,7 +28,7 @@ async fn create_swap(
     };
 
     let res = client
-        .post("https://api.boltz.exchange/api/swap")
+        .post("wss://api.testnet.boltz.exchange/v2/ws")
         .json(&swap_request)
         .send()
         .await?;
