@@ -1,3 +1,9 @@
+use std::error::Error;
+use serde::de::Error;
+use serde::ser::Error;
+use reqwest::Client;
+use boltz_api::{create_swap, Swap};
+
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     let client = Client::new();
