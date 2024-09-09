@@ -6,7 +6,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     let client: Client = Client::new();
 
     // Replace with a valid Bitcoin or Lightning address
-    let address: &str = "your_address_here";
+    let address: &str = "tb1qucca4xdg4lymahghmkkxs7yvsh0tyl95xzt0mh";
     let currency: &str = "BTC";
 
     // Swap creation
