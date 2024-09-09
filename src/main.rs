@@ -6,10 +6,16 @@ async fn main() -> Result<(), Box<dyn Error>> {
     let client: Client = Client::new();
 
     // Replace with a valid Bitcoin or Lightning address
-    let address = "your_address_here";
-    let currency = "BTC";
+    let address: &str = "your_address_here";
+    let currency: &str = "BTC";
+
+    // Swap creation
+    let swap_result = create_swap(&client, address, currency).await?;
+    println!("{}", swap_result);
+
+    Ok(())
 }
-// Swap cration
+
 async fn create_swap(_client: &Client, _address: &str, _currency: &str) -> Result<String, Box<dyn Error>> {
     // Implement the create_swap function here
     // This is a placeholder implementation
